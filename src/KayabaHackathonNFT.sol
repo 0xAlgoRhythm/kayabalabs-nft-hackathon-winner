@@ -123,6 +123,8 @@ contract KayabaHackathonNFT is ERC721, ERC721URIStorage, Ownable {
             payable(msg.sender).transfer(msg.value - MINT_FEE);
         }
         
+        require(recipients.length == dates.length, "Recipients and dates length mismatch");
+        
         string[] memory achievementIds = new string[](recipients.length);
         
         for (uint256 i = 0; i < recipients.length; i++) {
@@ -132,6 +134,8 @@ contract KayabaHackathonNFT is ERC721, ERC721URIStorage, Ownable {
             string memory achievementId = string(
                 abi.encodePacked(
                     achievementPrefix,
+                    "-",
+                    _padNumber(tokenId + 1, 4)
                 )
             );
             
