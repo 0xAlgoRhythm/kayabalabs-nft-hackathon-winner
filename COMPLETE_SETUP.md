@@ -253,6 +253,7 @@ forge init
 # Remove default files
 rm src/Counter.sol test/Counter.t.sol script/Counter.s.sol
 
+
 When you mint an achievement:
 
 **Winner (level 0):**
@@ -260,6 +261,8 @@ When you mint an achievement:
 mintAchievement(wallet, "ETHGlobal", "DeFi App", 0, "Jan 18")
 ```
 → Shows **GOLD trophy** 🏆 (winner.json)
+
+**Runner-up (level 1):**
 ```bash
 mintAchievement(wallet, "ETHGlobal", "NFT Market", 1, "Jan 18")
 ```
