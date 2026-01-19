@@ -212,6 +212,11 @@ cd hackathon-metadata
   ]
 }
 ```
+
+**IMPORTANT:** Replace `YOUR_*_IMAGE_CID` with actual CIDs from Step 2!
+
+---
+
 **Total setup time: ~30 minutes**
 **Cost on Scroll mainnet: ~$2-5 to deploy**
 
