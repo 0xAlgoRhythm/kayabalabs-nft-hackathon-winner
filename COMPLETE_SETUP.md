@@ -224,6 +224,10 @@ cd hackathon-metadata
 # Upload each JSON file ONE BY ONE
 ```
 
+**Save each CID:**
+```
+WINNER_METADATA_CID=bafkrei...
+RUNNERUP_METADATA_CID=bafkrei...
 **Total setup time: ~30 minutes**
 **Cost on Scroll mainnet: ~$2-5 to deploy**
 
