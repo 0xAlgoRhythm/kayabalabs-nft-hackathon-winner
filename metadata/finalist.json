@@ -1,0 +1,32 @@
+{
+  "name": "Kayaba Labs - Hackathon Finalist 🥉",
+  "description": "This NFT certifies FINALIST achievement (Top 10) in a Kayaba Labs hackathon. This is a soulbound credential representing exceptional skill in blockchain development.",
+  "image": "ipfs://FINALIST_IMAGE_CID_HERE",
+  "external_url": "https://kayabalabs.com/hackathons",
+  "attributes": [
+    {
+      "trait_type": "Achievement Type",
+      "value": "Hackathon Finalist"
+    },
+    {
+      "trait_type": "Level",
+      "value": "Finalist"
+    },
+    {
+      "trait_type": "Rank",
+      "value": "Top 10"
+    },
+    {
+      "trait_type": "Institution",
+      "value": "Kayaba Labs"
+    },
+    {
+      "trait_type": "Certificate Type",
+      "value": "Soulbound NFT"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Rare"
+    }
+  ]
+}

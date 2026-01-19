@@ -1,0 +1,55 @@
+{
+  "name": "Kayaba Labs - Hackathon Participant 🎖️",
+  "description": "This NFT certifies participation in a Kayaba Labs hackathon. This is a soulbound credential representing engagement in blockchain innovation and learning.",
+  "image": "ipfs://PARTICIPANT_IMAGE_CID_HERE",
+  "external_url": "https://kayabalabs.com/hackathons",
+  "attributes": [
+    {
+      "trait_type": "Achievement Type",
+      "value": "Hackathon Participant"
+    },
+    {
+      "trait_type": "Level",
+      "value": "Participant"
+    },
+    {
+      "trait_type": "Rank",
+      "value": "Participated"
+    },
+    {
+      "trait_type": "Institution",
+      "value": "Kayaba Labs"
+    },
+    {
+      "trait_type": "Certificate Type",
+      "value": "Soulbound NFT"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Common"
+    }
+  ]  "external_url": "https://kayabalabs.com/hackathons",
+    "attributes": [
+      {
+        "trait_type": "Achievement Type",
+        "value": "Hackathon Runner-up"
+      },
+      {
+        "trait_type": "Level",
+        "value": "Runner-up"
+      },
+      {
+        "trait_type": "Rank",
+        "value": "2nd/3rd Place"
+      },
+      {
+        "trait_type": "Institution",
+        "value": "Kayaba Labs"
+      },
+  
+  @@ -8,3 +24,9 @@
+        "trait_type": "Certificate Type",
+        "value": "Soulbound NFT"
+      },
+  
+}
