@@ -95,6 +95,9 @@ cd hackathon-metadata
     },
     {
       "trait_type": "Certificate Type",
+    },
+    {
+      "trait_type": "Rarity",
 **Total setup time: ~30 minutes**
 **Cost on Scroll mainnet: ~$2-5 to deploy**
 
