@@ -48,3 +48,6 @@ contract DeployHackathonNFT is Script {
         console.log("  ... and so on");
         console.log("====================================");
         console.log("");
+        console.log("Achievement Levels:");
+        console.log("  0 = Winner     -> Shows GOLD trophy");
+        console.log("  1 = Runner-up  -> Shows SILVER trophy");
