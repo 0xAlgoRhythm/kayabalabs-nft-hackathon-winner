@@ -253,6 +253,8 @@ forge init
 # Remove default files
 rm src/Counter.sol test/Counter.t.sol script/Counter.s.sol
 
+- [ ] 4 badge images created
+- [ ] 4 images uploaded to Lighthouse
 - [ ] 4 image CIDs saved
 - [ ] 4 metadata JSON files created
 - [ ] Image CIDs added to JSON files
@@ -263,6 +265,7 @@ rm src/Counter.sol test/Counter.t.sol script/Counter.s.sol
 - [ ] Contract built successfully
 - [ ] Contract deployed to testnet
 - [ ] Winner NFT minted (shows gold trophy)
+- [ ] Verified different levels show different images
 
 ---
 
