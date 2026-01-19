@@ -258,6 +258,11 @@ rm src/Counter.sol test/Counter.t.sol script/Counter.s.sol
 
 ```bash
 echo "CONTRACT_ADDRESS=0xYourContractAddress" >> .env
+source .env
+```
+
+---
+
 
 When you mint an achievement:
 
