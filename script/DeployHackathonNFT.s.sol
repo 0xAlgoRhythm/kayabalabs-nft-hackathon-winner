@@ -23,3 +23,9 @@ contract DeployHackathonNFT is Script {
             winnerURI,
             runnerupURI,
             finalistURI,
+            participantURI,
+            achievementPrefix
+        );
+        
+        console.log("====================================");
+        console.log("Kayaba Hackathon Achievement NFT Deployed!");
