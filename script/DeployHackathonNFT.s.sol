@@ -17,3 +17,9 @@ contract DeployHackathonNFT is Script {
         // Achievement prefix for IDs
         string memory achievementPrefix = "KL-HACK";
         
+        vm.startBroadcast(deployerPrivateKey);
+        
+        KayabaHackathonNFT nft = new KayabaHackathonNFT(
+            winnerURI,
+            runnerupURI,
+            finalistURI,
