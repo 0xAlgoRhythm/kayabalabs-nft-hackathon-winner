@@ -127,6 +127,11 @@ contract KayabaHackathonNFT is ERC721, ERC721URIStorage, Ownable {
         
         for (uint256 i = 0; i < recipients.length; i++) {
             uint256 tokenId = _nextTokenId++;
+            
+            // Auto-generate achievement ID
+            string memory achievementId = string(
+                abi.encodePacked(
+                    achievementPrefix,
                 )
             );
             
