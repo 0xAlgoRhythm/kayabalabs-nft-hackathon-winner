@@ -28,6 +28,11 @@ Create or design 4 different badge images:
 
 **Design tips:**
 - Use gold/yellow for winner
+- Use silver/gray for runner-up
+- Use bronze/brown for finalist
+- Use blue/standard for participant
+- Keep consistent branding across all
+
 **Total setup time: ~30 minutes**
 **Cost on Scroll mainnet: ~$2-5 to deploy**
 
