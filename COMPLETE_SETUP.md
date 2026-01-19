@@ -57,6 +57,12 @@ https://gateway.lighthouse.storage/ipfs/WINNER_IMAGE_CID
 https://gateway.lighthouse.storage/ipfs/RUNNERUP_IMAGE_CID
 https://gateway.lighthouse.storage/ipfs/FINALIST_IMAGE_CID
 https://gateway.lighthouse.storage/ipfs/PARTICIPANT_IMAGE_CID
+```
+
+---
+
+### Step 3: Create 4 Metadata JSON Files (5 minutes)
+
 **Total setup time: ~30 minutes**
 **Cost on Scroll mainnet: ~$2-5 to deploy**
 
