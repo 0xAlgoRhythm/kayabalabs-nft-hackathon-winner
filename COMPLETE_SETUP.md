@@ -240,6 +240,13 @@ https://gateway.lighthouse.storage/ipfs/FINALIST_METADATA_CID
 https://gateway.lighthouse.storage/ipfs/PARTICIPANT_METADATA_CID
 ```
 
+---
+
+### Step 5: Setup Forge Project (3 minutes)
+
+```bash
+cd /path/to/your/hackathon-nft-repo
+
 **Total setup time: ~30 minutes**
 **Cost on Scroll mainnet: ~$2-5 to deploy**
 
