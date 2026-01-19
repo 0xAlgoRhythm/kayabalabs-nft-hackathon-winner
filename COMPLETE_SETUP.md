@@ -253,6 +253,11 @@ forge init
 # Remove default files
 rm src/Counter.sol test/Counter.t.sol script/Counter.s.sol
 
+forge install OpenZeppelin/openzeppelin-contracts --no-commit
+
+# Create remappings
+echo '@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/' > remappings.txt
+
 **Update deployment script with your CIDs:**
 ```bash
 nano script/DeployHackathonNFT.s.sol
