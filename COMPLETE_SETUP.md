@@ -253,10 +253,14 @@ forge init
 # Remove default files
 rm src/Counter.sol test/Counter.t.sol script/Counter.s.sol
 
+forge build
+
 # Should compile successfully!
 
 # Deploy to testnet
 forge script script/DeployHackathonNFT.s.sol:DeployHackathonNFT \
+    --rpc-url $SCROLL_SEPOLIA_RPC_URL \
+    --broadcast \
     -vvvv
 ```
 
