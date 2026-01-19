@@ -1,6 +1,14 @@
 {
   "name": "Kayaba Labs - Hackathon Runner-up 🥈",
   "description": "This NFT certifies RUNNER-UP achievement (2nd/3rd Place) in a Kayaba Labs hackathon. This is a soulbound credential representing outstanding performance in blockchain innovation.",
+  "external_url": "https://kayabalabs.com/hackathons",
+  "attributes": [
+    {
+      "trait_type": "Achievement Type",
+      "value": "Hackathon Runner-up"
+    },
+    {
+      "trait_type": "Level",
       "value": "Runner-up"
     },
     {
@@ -20,3 +28,4 @@
       "value": "Epic"
     }
   ]
+}
