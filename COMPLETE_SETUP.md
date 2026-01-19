@@ -253,6 +253,12 @@ forge init
 # Remove default files
 rm src/Counter.sol test/Counter.t.sol script/Counter.s.sol
 
+
+```bash
+# 1 Winner, 2 Runner-ups, 3 Finalists, 4 Participants
+cast send $CONTRACT_ADDRESS \
+    "batchMintAchievements(address[],string,string[],uint8[],string[])" \
+    "[0xW1,0xR1,0xR2,0xF1,0xF2,0xF3,0xP1,0xP2,0xP3,0xP4]" \
     "[\"Jan 18\",\"Jan 18\",\"Jan 18\",\"Jan 18\",\"Jan 18\",\"Jan 18\",\"Jan 18\",\"Jan 18\",\"Jan 18\",\"Jan 18\"]" \
     --rpc-url $SCROLL_SEPOLIA_RPC_URL \
     --private-key $PRIVATE_KEY
