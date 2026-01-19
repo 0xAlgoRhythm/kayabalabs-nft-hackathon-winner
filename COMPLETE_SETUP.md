@@ -68,6 +68,11 @@ Create a folder:
 mkdir hackathon-metadata
 cd hackathon-metadata
 ```
+
+**Create `winner.json`:**
+```json
+{
+  "name": "Kayaba Labs - Hackathon Winner 🏆",
 **Total setup time: ~30 minutes**
 **Cost on Scroll mainnet: ~$2-5 to deploy**
 
