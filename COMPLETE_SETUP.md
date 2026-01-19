@@ -16,6 +16,13 @@ Contract **automatically** picks the right image based on achievement level!
 
 ### Step 1: Prepare Your 4 Badge Images (10 minutes)
 
+Create or design 4 different badge images:
+
+**Recommended sizes:** 500x500px or 1000x1000px
+
+**File names:**
+- `winner-badge.png` - Gold trophy 🏆
+- `runnerup-badge.png` - Silver trophy 🥈
 **Total setup time: ~30 minutes**
 **Cost on Scroll mainnet: ~$2-5 to deploy**
 
