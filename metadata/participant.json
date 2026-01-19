@@ -1,0 +1,7 @@
+{
+  "name": "Kayaba Labs - Hackathon Participant 🎖️",
+  "description": "This NFT certifies participation in a Kayaba Labs hackathon. This is a soulbound credential representing engagement in blockchain innovation and learning.",
+  "image": "ipfs://PARTICIPANT_IMAGE_CID_HERE",
+  "external_url": "https://kayabalabs.com/hackathons",
+  "attributes": [
+    {
