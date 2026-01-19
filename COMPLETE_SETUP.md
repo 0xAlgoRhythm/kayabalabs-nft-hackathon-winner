@@ -253,6 +253,10 @@ forge init
 # Remove default files
 rm src/Counter.sol test/Counter.t.sol script/Counter.s.sol
 
+→ Shows **SILVER trophy** 🥈 (runnerup.json)
+
+**Finalist (level 2):**
+```bash
 ```
 → Shows **BRONZE trophy** 🥉 (finalist.json)
 
