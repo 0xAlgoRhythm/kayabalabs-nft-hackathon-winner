@@ -253,6 +253,11 @@ forge init
 # Remove default files
 rm src/Counter.sol test/Counter.t.sol script/Counter.s.sol
 
+    "[\"Jan 18\",\"Jan 18\",\"Jan 18\",\"Jan 18\",\"Jan 18\",\"Jan 18\",\"Jan 18\",\"Jan 18\",\"Jan 18\",\"Jan 18\"]" \
+    --rpc-url $SCROLL_SEPOLIA_RPC_URL \
+    --private-key $PRIVATE_KEY
+```
+
 **Results:**
 - Token 0: Winner - Gold 🏆
 - Tokens 1-2: Runner-ups - Silver 🥈
