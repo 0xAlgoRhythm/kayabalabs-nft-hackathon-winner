@@ -33,6 +33,11 @@ contract KayabaHackathonNFT is ERC721, ERC721URIStorage, Ownable {
         string projectName;       // "DeFi Dashboard"
         AchievementLevel level;   // Winner, Runner-up, etc.
         string completionDate;    // "January 18, 2026"
+    }
+
+    uint256 private _nextTokenId;
+    uint256 public constant MINT_FEE = 0.0003 ether; // ~$0.50 on L2s
+    
         string memory hackathonName,
         string memory projectName,
         AchievementLevel level,
