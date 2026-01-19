@@ -286,6 +286,11 @@ source .env
 ### Step 6: Add Contract Files (2 minutes)
 
 **Create `src/KayabaHackathonNFT.sol`:**
+Copy the updated contract from artifact above.
+
+**Create `script/DeployHackathonNFT.s.sol`:**
+Copy the deployment script from artifact above.
+
 **Update deployment script with your CIDs:**
 ```bash
 nano script/DeployHackathonNFT.s.sol
