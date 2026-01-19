@@ -253,11 +253,16 @@ forge init
 # Remove default files
 rm src/Counter.sol test/Counter.t.sol script/Counter.s.sol
 
+# Install OpenZeppelin
 forge install OpenZeppelin/openzeppelin-contracts --no-commit
 
 # Create remappings
 echo '@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/' > remappings.txt
 
+# Create .env
+cat > .env << 'EOF'
+PRIVATE_KEY=your_private_key_here
+SCROLL_SEPOLIA_RPC_URL=https://sepolia-rpc.scroll.io
 **Update deployment script with your CIDs:**
 ```bash
 nano script/DeployHackathonNFT.s.sol
