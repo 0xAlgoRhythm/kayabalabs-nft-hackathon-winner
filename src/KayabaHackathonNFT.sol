@@ -123,6 +123,9 @@ contract KayabaHackathonNFT is ERC721, ERC721URIStorage, Ownable {
             payable(msg.sender).transfer(msg.value - MINT_FEE);
         }
         
+        if (from != address(0) && to != address(0)) {
+            revert("Achievement is soulbound and cannot be transferred");
+        }
         
         return super._update(to, tokenId, auth);
     }
