@@ -253,6 +253,12 @@ forge init
 # Remove default files
 rm src/Counter.sol test/Counter.t.sol script/Counter.s.sol
 
+```
+https://testnets.opensea.io/assets/sepolia/CONTRACT_ADDRESS/0
+```
+
+Should show **GOLD trophy** image!
+
 ---
 
 ## 📊 Batch Mint Example
