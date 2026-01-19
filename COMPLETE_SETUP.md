@@ -253,6 +253,11 @@ forge init
 # Remove default files
 rm src/Counter.sol test/Counter.t.sol script/Counter.s.sol
 
+
+---
+
+## 🚀 Test Your Deployment
+
 ### Test 1: Mint Winner
 
 ```bash
