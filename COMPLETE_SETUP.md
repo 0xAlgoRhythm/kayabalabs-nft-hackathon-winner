@@ -144,6 +144,9 @@ cd hackathon-metadata
 **Create `finalist.json`:**
 ```json
 {
+  "name": "Kayaba Labs - Hackathon Finalist 🥉",
+  "description": "This NFT certifies FINALIST achievement (Top 10) in a Kayaba Labs hackathon. This is a soulbound credential representing exceptional skill in blockchain development.",
+  "image": "ipfs://YOUR_FINALIST_IMAGE_CID",
     {
       "trait_type": "Institution",
       "value": "Kayaba Labs"
