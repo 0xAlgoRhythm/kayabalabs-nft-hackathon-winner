@@ -78,6 +78,9 @@ contract KayabaHackathonNFT is ERC721, ERC721URIStorage, Ownable {
      * @dev Mint hackathon achievement (auto-generates achievement ID)
      * @param to Participant's wallet address
      * @param hackathonName Name of the hackathon (e.g., "ETHGlobal Paris 2024")
+     * @param projectName Name of the project submitted
+     * @param level Achievement level (0=Winner, 1=Runner-up, 2=Finalist, 3=Participant)
+     * @param date Completion date
         string memory hackathonName,
         string memory projectName,
         AchievementLevel level,
