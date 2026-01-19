@@ -254,6 +254,12 @@ forge init
 rm src/Counter.sol test/Counter.t.sol script/Counter.s.sol
 
 ```
+
+Should return your WINNER metadata URI!
+
+### Test 3: Verify on OpenSea (after 30 mins)
+
+```
 https://testnets.opensea.io/assets/sepolia/CONTRACT_ADDRESS/0
 ```
 
