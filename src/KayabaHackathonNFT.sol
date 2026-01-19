@@ -71,6 +71,15 @@
         public
         view
         override(ERC721, ERC721URIStorage)
+        returns (string memory)
+    {
+        require(_ownerOf(tokenId) != address(0), "Token does not exist");
+        
+        // Return different metadata based on achievement level
+        AchievementLevel level = hackathonInfo[tokenId].level;
+        public
+        view
+        override(ERC721, ERC721URIStorage)
         returns (bool)
     {
         return super.supportsInterface(interfaceId);
