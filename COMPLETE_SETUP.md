@@ -253,12 +253,16 @@ forge init
 # Remove default files
 rm src/Counter.sol test/Counter.t.sol script/Counter.s.sol
 
+- [ ] 4 image CIDs saved
+- [ ] 4 metadata JSON files created
+- [ ] Image CIDs added to JSON files
 - [ ] 4 JSON files uploaded to Lighthouse
 - [ ] 4 metadata CIDs saved
 - [ ] Contract file created
 - [ ] Deployment script updated with CIDs
 - [ ] Contract built successfully
 - [ ] Contract deployed to testnet
+- [ ] Winner NFT minted (shows gold trophy)
 
 ---
 
