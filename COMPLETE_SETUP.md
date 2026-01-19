@@ -253,6 +253,8 @@ forge init
 # Remove default files
 rm src/Counter.sol test/Counter.t.sol script/Counter.s.sol
 
+    -vvvv
+```
 
 **SAVE THE CONTRACT ADDRESS!**
 
@@ -263,6 +265,7 @@ source .env
 
 ---
 
+## 🎨 How It Works
 
 When you mint an achievement:
 
