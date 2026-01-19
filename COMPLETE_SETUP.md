@@ -253,6 +253,13 @@ forge init
 # Remove default files
 rm src/Counter.sol test/Counter.t.sol script/Counter.s.sol
 
+- Image: Gold trophy 🏆
+- Level: Winner
+
+### Test 2: Check Metadata
+
+```bash
+cast call $CONTRACT_ADDRESS "tokenURI(uint256)" 0 --rpc-url $SCROLL_SEPOLIA_RPC_URL
 ```
 
 Should return your WINNER metadata URI!
