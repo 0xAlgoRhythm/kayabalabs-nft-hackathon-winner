@@ -123,6 +123,11 @@ contract KayabaHackathonNFT is ERC721, ERC721URIStorage, Ownable {
             payable(msg.sender).transfer(msg.value - MINT_FEE);
         }
         
+            
+            _safeMint(recipients[i], tokenId);
+            // Don't set URI here - it will be determined by tokenURI() based on level
+            
+            // Store hackathon information
                 hackathonName: hackathonName,
                 projectName: projectNames[i],
                 level: levels[i],
