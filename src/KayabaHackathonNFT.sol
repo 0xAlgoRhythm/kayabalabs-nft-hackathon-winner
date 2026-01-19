@@ -26,6 +26,13 @@ contract KayabaHackathonNFT is ERC721, ERC721URIStorage, Ownable {
         PARTICIPANT      // 3 = Participated (Standard)
     }
 
+    // Hackathon achievement info
+    struct HackathonInfo {
+        string achievementId;     // Auto-generated: KL-HACK-0001
+        string hackathonName;     // "ETHGlobal Paris 2024"
+        string projectName;       // "DeFi Dashboard"
+        AchievementLevel level;   // Winner, Runner-up, etc.
+        string completionDate;    // "January 18, 2026"
         string memory hackathonName,
         string memory projectName,
         AchievementLevel level,
