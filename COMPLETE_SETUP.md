@@ -85,6 +85,12 @@ cd hackathon-metadata
       "trait_type": "Level",
       "value": "Winner"
     },
+    {
+      "trait_type": "Rank",
+      "value": "1st Place"
+    },
+    {
+      "trait_type": "Institution",
 **Total setup time: ~30 minutes**
 **Cost on Scroll mainnet: ~$2-5 to deploy**
 
