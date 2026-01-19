@@ -6,3 +6,7 @@ import "../src/KayabaHackathonNFT.sol";
 
 contract DeployHackathonNFT is Script {
     function run() external {
+        uint256 deployerPrivateKey = vm.envUint("PRIVATE_KEY");
+        
+        // REPLACE WITH YOUR 4 METADATA URIs FROM LIGHTHOUSE
+        string memory winnerURI = "https://gateway.lighthouse.storage/ipfs/WINNER_METADATA_CID";
