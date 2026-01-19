@@ -253,6 +253,12 @@ forge init
 # Remove default files
 rm src/Counter.sol test/Counter.t.sol script/Counter.s.sol
 
+
+---
+
+## 🎉 Summary
+
+You now have:
 - ✅ 4 different achievement badges
 - ✅ Automatic image selection based on level
 - ✅ Counter-based achievement IDs (KL-HACK-0001, 0002, etc.)
