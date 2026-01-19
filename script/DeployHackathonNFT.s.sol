@@ -29,3 +29,8 @@ contract DeployHackathonNFT is Script {
         
         console.log("====================================");
         console.log("Kayaba Hackathon Achievement NFT Deployed!");
+        console.log("====================================");
+        console.log("Contract Address:", address(nft));
+        console.log("Achievement Prefix:", achievementPrefix);
+        console.log("====================================");
+        console.log("");
