@@ -128,6 +128,10 @@ contract KayabaHackathonNFT is ERC721, ERC721URIStorage, Ownable {
             AchievementLevel level,
             string memory date,
             address participant
+        ) 
+    {
+        require(_ownerOf(tokenId) != address(0), "Token does not exist");
+        HackathonInfo memory info = hackathonInfo[tokenId];
         return (
             info.achievementId,
             info.hackathonName,
