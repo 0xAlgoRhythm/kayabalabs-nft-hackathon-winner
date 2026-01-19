@@ -123,6 +123,9 @@ contract KayabaHackathonNFT is ERC721, ERC721URIStorage, Ownable {
             payable(msg.sender).transfer(msg.value - MINT_FEE);
         }
         
+        string[] memory dates
+    ) public onlyOwner returns (string[] memory) {
+        require(recipients.length == projectNames.length, "Recipients and projects length mismatch");
         require(recipients.length == dates.length, "Recipients and dates length mismatch");
         
         string[] memory achievementIds = new string[](recipients.length);
