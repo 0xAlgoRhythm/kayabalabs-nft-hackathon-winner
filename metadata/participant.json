@@ -28,5 +28,28 @@
       "trait_type": "Rarity",
       "value": "Common"
     }
-  ]
+  ]  "external_url": "https://kayabalabs.com/hackathons",
+    "attributes": [
+      {
+        "trait_type": "Achievement Type",
+        "value": "Hackathon Runner-up"
+      },
+      {
+        "trait_type": "Level",
+        "value": "Runner-up"
+      },
+      {
+        "trait_type": "Rank",
+        "value": "2nd/3rd Place"
+      },
+      {
+        "trait_type": "Institution",
+        "value": "Kayaba Labs"
+      },
+  
+  @@ -8,3 +24,9 @@
+        "trait_type": "Certificate Type",
+        "value": "Soulbound NFT"
+      },
+  
 }
