@@ -53,6 +53,8 @@
      * @dev Get total minted achievements
      */
     function totalSupply() public view returns (uint256) {
+        return _nextTokenId;
+    }
 
     /**
      * @dev Helper function to pad numbers with leading zeros
