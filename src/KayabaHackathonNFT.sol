@@ -119,6 +119,154 @@ contract KayabaHackathonNFT is ERC721, ERC721URIStorage, Ownable {
         emit HackathonAchievementMinted(to, tokenId, achievementId, hackathonName, level);
          
         // Refund excess payment
+        if (msg.value > MINT_FEE) {
+            payable(msg.sender).transfer(msg.value - MINT_FEE);
+        }
+        
+        return (tokenId, achievementId);
+    }
+
+    /**
+     * @dev Soulbound: Prevent transfers (achievements are non-transferable)
+     */
+    function _update(
+        address to,
+        uint256 tokenId,
+        address auth
+    ) internal virtual override returns (address) {
+        address from = _ownerOf(tokenId);
+        
+        // Allow minting (from address(0)) but block transfers
+        if (from != address(0) && to != address(0)) {
+            revert("Achievement is soulbound and cannot be transferred");
+        }
+        
+        return super._update(to, tokenId, auth);
+    }
+
+    /**
+     * @dev Batch mint achievements (only owner, no fees)
+     * @param recipients Array of participant wallet addresses
+     * @param hackathonName Name of the hackathon (same for all)
+     * @param projectNames Array of project names (one per recipient)
+     * @param levels Array of achievement levels (one per recipient)
+     * @param dates Array of completion dates
+     */
+    function batchMintAchievements(
+        address[] memory recipients,
+        string memory hackathonName,
+        string[] memory projectNames,
+        AchievementLevel[] memory levels,
+        string[] memory dates
+    ) public onlyOwner returns (string[] memory) {
+        require(recipients.length == projectNames.length, "Recipients and projects length mismatch");
+        require(recipients.length == levels.length, "Recipients and levels length mismatch");
+        require(recipients.length == dates.length, "Recipients and dates length mismatch");
+        
+        string[] memory achievementIds = new string[](recipients.length);
+        
+        for (uint256 i = 0; i < recipients.length; i++) {
+            uint256 tokenId = _nextTokenId++;
+            
+            // Auto-generate achievement ID
+            string memory achievementId = string(
+                abi.encodePacked(
+                    achievementPrefix,
+                    "-",
+                    _padNumber(tokenId + 1, 4)
+                )
+            );
+            
+            _safeMint(recipients[i], tokenId);
+            // Don't set URI here - it will be determined by tokenURI() based on level
+            
+            // Store hackathon information
+            hackathonInfo[tokenId] = HackathonInfo({
+                achievementId: achievementId,
+                hackathonName: hackathonName,
+                projectName: projectNames[i],
+                level: levels[i],
+                completionDate: dates[i]
+            });
+            
+            achievementIds[i] = achievementId;
+            
+            emit HackathonAchievementMinted(recipients[i], tokenId, achievementId, hackathonName, levels[i]);
+        }
+        
+        return achievementIds;
+    }
+
+    /**
+     * @dev Withdraw collected fees (only owner)
+     */
+    function withdrawFees() public onlyOwner {
+        uint256 balance = address(this).balance;
+        require(balance > 0, "No funds to withdraw");
+        
+        payable(owner()).transfer(balance);
+        emit FundsWithdrawn(owner(), balance);
+    }
+    
+    /**
+     * @dev Update metadata URIs (only owner)
+     */
+    function setMetadataURIs(
+        string memory winnerURI,
+        string memory runnerupURI,
+        string memory finalistURI,
+        string memory participantURI
+    ) public onlyOwner {
+        _winnerMetadataURI = winnerURI;
+        _runnerupMetadataURI = runnerupURI;
+        _finalistMetadataURI = finalistURI;
+        _participantMetadataURI = participantURI;
+    }
+    
+    /**
+     * @dev Update achievement prefix (only owner)
+     */
+    function setAchievementPrefix(string memory newPrefix) public onlyOwner {
+        achievementPrefix = newPrefix;
+    }
+    
+    /**
+     * @dev Get complete achievement information for a token
+     */
+    function getAchievementInfo(uint256 tokenId) 
+        public 
+        view 
+        returns (
+            string memory achievementId,
+            string memory hackathonName,
+            string memory projectName,
+            AchievementLevel level,
+            string memory date,
+            address participant
+        ) 
+    {
+        require(_ownerOf(tokenId) != address(0), "Token does not exist");
+        HackathonInfo memory info = hackathonInfo[tokenId];
+        return (
+            info.achievementId,
+            info.hackathonName,
+            info.projectName,
+            info.level,
+            info.completionDate,
+            ownerOf(tokenId)
+        );
+    }
+
+    /**
+     * @dev Get achievement ID for a specific token
+     */
+    function getAchievementId(uint256 tokenId) public view returns (string memory) {
+        require(_ownerOf(tokenId) != address(0), "Token does not exist");
+        return hackathonInfo[tokenId].achievementId;
+    }
+
+    /**
+     * @dev Get achievement level as string
      */
     function getLevelString(uint256 tokenId) public view returns (string memory) {
         require(_ownerOf(tokenId) != address(0), "Token does not exist");
