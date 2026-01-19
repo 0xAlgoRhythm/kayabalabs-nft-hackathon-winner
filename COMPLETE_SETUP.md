@@ -234,6 +234,12 @@ PARTICIPANT_METADATA_CID=bafkrei...
 
 **Test URLs (should show your JSON):**
 ```
+https://gateway.lighthouse.storage/ipfs/WINNER_METADATA_CID
+https://gateway.lighthouse.storage/ipfs/RUNNERUP_METADATA_CID
+https://gateway.lighthouse.storage/ipfs/FINALIST_METADATA_CID
+https://gateway.lighthouse.storage/ipfs/PARTICIPANT_METADATA_CID
+```
+
 **Total setup time: ~30 minutes**
 **Cost on Scroll mainnet: ~$2-5 to deploy**
 
