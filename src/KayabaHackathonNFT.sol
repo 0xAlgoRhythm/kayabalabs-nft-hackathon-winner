@@ -81,6 +81,9 @@ contract KayabaHackathonNFT is ERC721, ERC721URIStorage, Ownable {
      * @param projectName Name of the project submitted
      * @param level Achievement level (0=Winner, 1=Runner-up, 2=Finalist, 3=Participant)
      * @param date Completion date
+     */
+    function mintAchievement(
+        address to,
         string memory hackathonName,
         string memory projectName,
         AchievementLevel level,
@@ -106,6 +109,7 @@ contract KayabaHackathonNFT is ERC721, ERC721URIStorage, Ownable {
         
         // Store hackathon information
         hackathonInfo[tokenId] = HackathonInfo({
+            achievementId: achievementId,
      */
     function getLevelString(uint256 tokenId) public view returns (string memory) {
         require(_ownerOf(tokenId) != address(0), "Token does not exist");
