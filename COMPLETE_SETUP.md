@@ -253,6 +253,13 @@ forge init
 # Remove default files
 rm src/Counter.sol test/Counter.t.sol script/Counter.s.sol
 
+    YOUR_WALLET \
+    "ETHGlobal Paris 2024" \
+    "DeFi Dashboard" \
+    0 \
+    "January 18, 2026" \
+    --value 0.0003ether \
+    --rpc-url $SCROLL_SEPOLIA_RPC_URL \
     --private-key $PRIVATE_KEY
 ```
 
