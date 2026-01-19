@@ -39,6 +39,14 @@ Create or design 4 different badge images:
 
 ```bash
 # Go to https://files.lighthouse.storage/
+# Upload each image ONE BY ONE
+```
+
+**After each upload, SAVE the CID:**
+
+```
+WINNER_IMAGE_CID=bafkrei...
+RUNNERUP_IMAGE_CID=bafkrei...
 **Total setup time: ~30 minutes**
 **Cost on Scroll mainnet: ~$2-5 to deploy**
 
