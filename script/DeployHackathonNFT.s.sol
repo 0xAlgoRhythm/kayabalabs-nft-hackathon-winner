@@ -55,3 +55,6 @@ contract DeployHackathonNFT is Script {
         console.log("  3 = Participant -> Shows STANDARD badge");
         console.log("====================================");
         
+        vm.stopBroadcast();
+    }
+}
