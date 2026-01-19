@@ -16,9 +16,12 @@ import "@openzeppelin/contracts/utils/Strings.sol";
  * - Auto-generated Achievement IDs
  */
 contract KayabaHackathonNFT is ERC721, ERC721URIStorage, Ownable {
+    using Strings for uint256;
 
     // Achievement levels
+    enum AchievementLevel {
         WINNER,          // 0 = 1st Place (Gold)
+        RUNNER_UP,       // 1 = 2nd/3rd Place (Silver)
         string memory hackathonName,
         string memory projectName,
         AchievementLevel level,
