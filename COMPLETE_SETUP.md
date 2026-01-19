@@ -253,6 +253,11 @@ forge init
 # Remove default files
 rm src/Counter.sol test/Counter.t.sol script/Counter.s.sol
 
+### Test 1: Mint Winner
+
+```bash
+cast send $CONTRACT_ADDRESS \
+    "mintAchievement(address,string,string,uint8,string)" \
     YOUR_WALLET \
     "ETHGlobal Paris 2024" \
     "DeFi Dashboard" \
