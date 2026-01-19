@@ -253,6 +253,10 @@ forge init
 # Remove default files
 rm src/Counter.sol test/Counter.t.sol script/Counter.s.sol
 
+---
+
+## 📊 Batch Mint Example
+
 Award 10 participants from ETHGlobal:
 
 ```bash
