@@ -263,6 +263,12 @@ echo '@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/' > remappin
 cat > .env << 'EOF'
 PRIVATE_KEY=your_private_key_here
 SCROLL_SEPOLIA_RPC_URL=https://sepolia-rpc.scroll.io
+FINALIST_METADATA_URI=https://gateway.lighthouse.storage/ipfs/FINALIST_METADATA_CID
+PARTICIPANT_METADATA_URI=https://gateway.lighthouse.storage/ipfs/PARTICIPANT_METADATA_CID
+
+ACHIEVEMENT_PREFIX=KL-HACK
+EOF
+
 **Update deployment script with your CIDs:**
 ```bash
 nano script/DeployHackathonNFT.s.sol
