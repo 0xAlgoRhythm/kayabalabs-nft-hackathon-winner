@@ -36,3 +36,8 @@ contract KayabaHackathonNFTTest is Test {
             ACHIEVEMENT_PREFIX
         );
         
+        // Fund test addresses
+        vm.deal(participant1, 10 ether);
+        vm.deal(participant2, 10 ether);
+        vm.deal(participant3, 10 ether);
+    }
