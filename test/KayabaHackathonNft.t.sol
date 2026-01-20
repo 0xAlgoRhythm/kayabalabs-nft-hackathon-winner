@@ -54,3 +54,8 @@ contract KayabaHackathonNFTTest is Test {
             "January 18, 2026"
         );
         
+        assertEq(nft.ownerOf(tokenId), participant1);
+        assertEq(tokenId, 0);
+        assertEq(achievementId, "KL-HACK-0001");
+        assertEq(address(nft).balance, MINT_FEE);
+    }
