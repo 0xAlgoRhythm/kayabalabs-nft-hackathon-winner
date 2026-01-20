@@ -350,3 +350,7 @@ contract KayabaHackathonNFTTest is Test {
             KayabaHackathonNFT.AchievementLevel.WINNER,
             "January 18, 2026"
         );
+        
+        vm.prank(participant1);
+        vm.expectRevert("Achievement is soulbound and cannot be transferred");
+        nft.transferFrom(participant1, participant2, tokenId);
