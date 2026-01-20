@@ -125,3 +125,8 @@ contract KayabaHackathonNFTTest is Test {
     }
     
     function testMintFailsWithEmptyProjectName() public {
+        vm.prank(participant1);
+        vm.expectRevert("Project name required");
+        nft.mintAchievement{value: MINT_FEE}(
+            participant1,
+            "ETHGlobal Paris 2024",
