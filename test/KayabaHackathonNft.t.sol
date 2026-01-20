@@ -104,3 +104,8 @@ contract KayabaHackathonNFTTest is Test {
         vm.prank(participant1);
         vm.expectRevert("Insufficient minting fee");
         nft.mintAchievement{value: 0.0001 ether}(
+            participant1,
+            "ETHGlobal Paris 2024",
+            "DeFi Dashboard",
+            KayabaHackathonNFT.AchievementLevel.WINNER,
+            "January 18, 2026"
