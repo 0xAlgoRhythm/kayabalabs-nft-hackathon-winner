@@ -220,3 +220,8 @@ contract KayabaHackathonNFTTest is Test {
             KayabaHackathonNFT.AchievementLevel.RUNNER_UP,
             "January 18, 2026"
         );
+            "ETHGlobal Paris 2024",
+            "Finalist Project",
+            KayabaHackathonNFT.AchievementLevel.FINALIST,
+            "January 18, 2026"
+        );
