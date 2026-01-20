@@ -6,3 +6,6 @@ import "../src/KayabaHackathonNFT.sol";
 
 contract KayabaHackathonNFTTest is Test {
     KayabaHackathonNFT public nft;
+    address public owner;
+    address public participant1;
+    address public participant2;
