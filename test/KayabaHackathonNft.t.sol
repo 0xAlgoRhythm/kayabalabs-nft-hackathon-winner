@@ -262,3 +262,6 @@ contract KayabaHackathonNFTTest is Test {
         recipients[2] = participant3;
         recipients[3] = address(0x4);
         
+        string[] memory projects = new string[](4);
+        projects[0] = "Winner Project";
+        projects[1] = "Runner-up Project";
