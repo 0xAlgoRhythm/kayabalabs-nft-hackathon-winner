@@ -301,3 +301,7 @@ contract KayabaHackathonNFTTest is Test {
         assertEq(nft.tokenURI(3), PARTICIPANT_URI);
     }
     
+    function testBatchMintOnlyOwner() public {
+        address[] memory recipients = new address[](1);
+        recipients[0] = participant1;
+        
