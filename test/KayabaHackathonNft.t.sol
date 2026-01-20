@@ -116,3 +116,8 @@ contract KayabaHackathonNFTTest is Test {
         vm.prank(participant1);
         vm.expectRevert("Hackathon name required");
         nft.mintAchievement{value: MINT_FEE}(
+            participant1,
+            "",
+            "DeFi Dashboard",
+            KayabaHackathonNFT.AchievementLevel.WINNER,
+            "January 18, 2026"
