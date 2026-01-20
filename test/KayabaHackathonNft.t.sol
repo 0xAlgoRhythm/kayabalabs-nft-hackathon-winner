@@ -172,3 +172,5 @@ contract KayabaHackathonNFTTest is Test {
         // Mint second achievement
         vm.prank(participant2);
         (, string memory id2) = nft.mintAchievement{value: MINT_FEE}(
+            participant2,
+            "ETHGlobal Paris 2024",
