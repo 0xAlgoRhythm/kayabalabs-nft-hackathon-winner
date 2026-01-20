@@ -253,7 +253,12 @@ contract KayabaHackathonNFTTest is Test {
         assertEq(uri, PARTICIPANT_URI);
     }
     
+    // ===== BATCH MINTING TESTS =====
+    
     function testBatchMintDifferentLevels() public {
         address[] memory recipients = new address[](4);
         recipients[0] = participant1;
         recipients[1] = participant2;
+        recipients[2] = participant3;
+        recipients[3] = address(0x4);
+        
