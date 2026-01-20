@@ -342,3 +342,7 @@ contract KayabaHackathonNFTTest is Test {
     // ===== SOULBOUND TESTS =====
     
     function testCannotTransferAchievement() public {
+        vm.prank(participant1);
+        (uint256 tokenId, ) = nft.mintAchievement{value: MINT_FEE}(
+            participant1,
+            "ETHGlobal Paris 2024",
