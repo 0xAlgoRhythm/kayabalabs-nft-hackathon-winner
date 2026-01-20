@@ -318,3 +318,7 @@ contract KayabaHackathonNFTTest is Test {
         vm.expectRevert();
         nft.batchMintAchievements(recipients, "Hackathon", projects, levels, dates);
     }
+    
+    function testBatchMintArrayLengthMismatch() public {
+        address[] memory recipients = new address[](2);
+        recipients[0] = participant1;
