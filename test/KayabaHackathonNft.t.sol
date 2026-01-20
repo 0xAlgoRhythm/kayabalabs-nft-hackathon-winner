@@ -67,3 +67,8 @@ contract KayabaHackathonNFTTest is Test {
             "ETHGlobal Paris 2024",
             "NFT Marketplace",
             KayabaHackathonNFT.AchievementLevel.RUNNER_UP,
+            "January 18, 2026"
+        );
+        
+        assertEq(nft.ownerOf(tokenId), participant1);
+        assertEq(achievementId, "KL-HACK-0001");
