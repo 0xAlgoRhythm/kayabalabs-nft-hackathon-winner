@@ -382,3 +382,7 @@ contract KayabaHackathonNFTTest is Test {
             "Project 1",
             KayabaHackathonNFT.AchievementLevel.WINNER,
             "January 18, 2026"
+            KayabaHackathonNFT.AchievementLevel.RUNNER_UP,
+            "January 18, 2026"
+        );
+        
