@@ -9,6 +9,11 @@
         echo -e "${GREEN}Progress: $LINE_NUM/$TOTAL_LINES lines ($PERCENT%) - $COMMIT_COUNT commits${NC}"
     fi
     
+    ((LINE_NUM++))
+done < "$FILE_PATH"
+
+# Cleanup
+rm -rf "$TEMP_DIR"
 
 echo ""
 echo -e "${GREEN}✅ Complete!${NC}"
@@ -21,6 +26,8 @@ echo ""
 echo -e "${YELLOW}To view all commits for this file:${NC}"
 echo "git log --oneline -- $FILE_PATH"
 echo ""
+echo -e "${YELLOW}To revert to a specific commit:${NC}"
+echo "git revert <commit-hash>"
 echo ""
 echo -e "${YELLOW}To see changes in a specific commit:${NC}"
 echo "git show <commit-hash>"
