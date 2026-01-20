@@ -190,3 +190,6 @@ contract KayabaHackathonNFTTest is Test {
         );
         
         assertEq(id1, "KL-HACK-0001");
+        assertEq(id2, "KL-HACK-0002");
+        assertEq(id3, "KL-HACK-0003");
+        assertEq(nft.totalSupply(), 3);
