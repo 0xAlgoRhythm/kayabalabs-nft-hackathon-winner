@@ -313,3 +313,8 @@ contract KayabaHackathonNFTTest is Test {
         
         string[] memory dates = new string[](1);
         dates[0] = "January 18, 2026";
+        
+        vm.prank(participant1);
+        vm.expectRevert();
+        nft.batchMintAchievements(recipients, "Hackathon", projects, levels, dates);
+    }
