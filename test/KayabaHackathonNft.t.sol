@@ -220,6 +220,10 @@ contract KayabaHackathonNFTTest is Test {
             KayabaHackathonNFT.AchievementLevel.RUNNER_UP,
             "January 18, 2026"
         );
+        
+        string memory uri = nft.tokenURI(tokenId);
+        assertEq(uri, RUNNERUP_URI);
+    }
             "ETHGlobal Paris 2024",
             "Finalist Project",
             KayabaHackathonNFT.AchievementLevel.FINALIST,
