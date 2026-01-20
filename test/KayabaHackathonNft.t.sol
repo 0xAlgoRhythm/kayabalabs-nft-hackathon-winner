@@ -87,3 +87,7 @@ contract KayabaHackathonNFTTest is Test {
         assertEq(nft.ownerOf(tokenId), participant1);
     }
     
+    function testMintParticipantWithFee() public {
+        vm.prank(participant1);
+        (uint256 tokenId, ) = nft.mintAchievement{value: MINT_FEE}(
+            participant1,
