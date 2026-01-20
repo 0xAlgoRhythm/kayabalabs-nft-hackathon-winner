@@ -265,3 +265,8 @@ contract KayabaHackathonNFTTest is Test {
         string[] memory projects = new string[](4);
         projects[0] = "Winner Project";
         projects[1] = "Runner-up Project";
+        KayabaHackathonNFT.AchievementLevel[] memory levels = new KayabaHackathonNFT.AchievementLevel[](4);
+        levels[0] = KayabaHackathonNFT.AchievementLevel.WINNER;
+        levels[1] = KayabaHackathonNFT.AchievementLevel.RUNNER_UP;
+        levels[2] = KayabaHackathonNFT.AchievementLevel.FINALIST;
+        levels[3] = KayabaHackathonNFT.AchievementLevel.PARTICIPANT;
