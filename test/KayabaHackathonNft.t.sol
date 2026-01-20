@@ -273,6 +273,7 @@ contract KayabaHackathonNFTTest is Test {
         levels[1] = KayabaHackathonNFT.AchievementLevel.RUNNER_UP;
         levels[2] = KayabaHackathonNFT.AchievementLevel.FINALIST;
         levels[3] = KayabaHackathonNFT.AchievementLevel.PARTICIPANT;
+        
         string[] memory dates = new string[](4);
         dates[0] = "January 18, 2026";
         dates[1] = "January 18, 2026";
@@ -285,3 +286,6 @@ contract KayabaHackathonNFTTest is Test {
             projects,
             levels,
             dates
+        );
+        
+        assertEq(nft.totalSupply(), 4);
