@@ -72,3 +72,8 @@ contract KayabaHackathonNFTTest is Test {
         
         assertEq(nft.ownerOf(tokenId), participant1);
         assertEq(achievementId, "KL-HACK-0001");
+    }
+    
+    function testMintFinalistWithFee() public {
+        vm.prank(participant1);
+        (uint256 tokenId, ) = nft.mintAchievement{value: MINT_FEE}(
