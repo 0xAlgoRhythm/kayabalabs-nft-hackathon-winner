@@ -28,3 +28,7 @@ contract KayabaHackathonNFTTest is Test {
         participant2 = address(0x2);
         participant3 = address(0x3);
         
+        nft = new KayabaHackathonNFT(
+            WINNER_URI,
+            RUNNERUP_URI,
+            FINALIST_URI,
