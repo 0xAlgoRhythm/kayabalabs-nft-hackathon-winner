@@ -322,3 +322,7 @@ contract KayabaHackathonNFTTest is Test {
     function testBatchMintArrayLengthMismatch() public {
         address[] memory recipients = new address[](2);
         recipients[0] = participant1;
+        recipients[1] = participant2;
+        
+        string[] memory projects = new string[](1); // Wrong length!
+        projects[0] = "Project";
