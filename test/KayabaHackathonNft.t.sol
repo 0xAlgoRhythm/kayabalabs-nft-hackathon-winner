@@ -178,3 +178,7 @@ contract KayabaHackathonNFTTest is Test {
             KayabaHackathonNFT.AchievementLevel.RUNNER_UP,
             "January 18, 2026"
         );
+        
+        // Mint third achievement
+        vm.prank(participant3);
+        (, string memory id3) = nft.mintAchievement{value: MINT_FEE}(
