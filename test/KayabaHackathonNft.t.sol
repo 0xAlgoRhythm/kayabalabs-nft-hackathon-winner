@@ -147,3 +147,7 @@ contract KayabaHackathonNFTTest is Test {
             KayabaHackathonNFT.AchievementLevel.WINNER,
             "January 18, 2026"
         );
+        assertLt(spent, 0.001 ether); // Less than what was sent (excess refunded)
+    }
+    
+    // ===== AUTO ID GENERATION TESTS =====
