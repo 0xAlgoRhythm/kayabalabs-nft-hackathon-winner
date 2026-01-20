@@ -365,3 +365,6 @@ contract KayabaHackathonNFTTest is Test {
             KayabaHackathonNFT.AchievementLevel.WINNER,
             "January 18, 2026"
         );
+    }
+    
+    // ===== FEE WITHDRAWAL TESTS =====
