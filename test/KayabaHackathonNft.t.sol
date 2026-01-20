@@ -305,3 +305,7 @@ contract KayabaHackathonNFTTest is Test {
         address[] memory recipients = new address[](1);
         recipients[0] = participant1;
         
+        string[] memory projects = new string[](1);
+        projects[0] = "Project";
+        
+        KayabaHackathonNFT.AchievementLevel[] memory levels = new KayabaHackathonNFT.AchievementLevel[](1);
