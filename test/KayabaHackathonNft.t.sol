@@ -100,3 +100,7 @@ contract KayabaHackathonNFTTest is Test {
         assertEq(nft.ownerOf(tokenId), participant1);
     }
     
+    function testMintFailsWithInsufficientFee() public {
+        vm.prank(participant1);
+        vm.expectRevert("Insufficient minting fee");
+        nft.mintAchievement{value: 0.0001 ether}(
