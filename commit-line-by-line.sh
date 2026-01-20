@@ -9,6 +9,11 @@
         echo -e "${GREEN}Progress: $LINE_NUM/$TOTAL_LINES lines ($PERCENT%) - $COMMIT_COUNT commits${NC}"
     fi
     
+
+echo ""
+echo -e "${GREEN}✅ Complete!${NC}"
+echo -e "${BLUE}File: $FILE_PATH${NC}"
+echo -e "${BLUE}Total commits: $COMMIT_COUNT${NC}"
 echo ""
 echo -e "${YELLOW}Recent commits:${NC}"
 git log --oneline -10
