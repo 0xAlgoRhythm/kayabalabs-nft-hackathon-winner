@@ -211,9 +211,11 @@ contract KayabaHackathonNFTTest is Test {
         assertEq(uri, WINNER_URI);
     }
     
+    function testRunnerUpGetsCorrectMetadata() public {
         vm.prank(participant1);
         (uint256 tokenId, ) = nft.mintAchievement{value: MINT_FEE}(
             participant1,
+            "ETHGlobal Paris 2024",
             "Runner-up Project",
             KayabaHackathonNFT.AchievementLevel.RUNNER_UP,
             "January 18, 2026"
