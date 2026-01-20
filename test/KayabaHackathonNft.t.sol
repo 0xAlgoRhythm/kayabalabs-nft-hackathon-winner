@@ -246,3 +246,8 @@ contract KayabaHackathonNFTTest is Test {
             "ETHGlobal Paris 2024",
             "Participant Project",
             KayabaHackathonNFT.AchievementLevel.PARTICIPANT,
+    
+    function testBatchMintDifferentLevels() public {
+        address[] memory recipients = new address[](4);
+        recipients[0] = participant1;
+        recipients[1] = participant2;
