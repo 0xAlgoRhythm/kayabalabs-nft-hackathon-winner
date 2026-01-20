@@ -246,6 +246,12 @@ contract KayabaHackathonNFTTest is Test {
             "ETHGlobal Paris 2024",
             "Participant Project",
             KayabaHackathonNFT.AchievementLevel.PARTICIPANT,
+            "January 18, 2026"
+        );
+        
+        string memory uri = nft.tokenURI(tokenId);
+        assertEq(uri, PARTICIPANT_URI);
+    }
     
     function testBatchMintDifferentLevels() public {
         address[] memory recipients = new address[](4);
