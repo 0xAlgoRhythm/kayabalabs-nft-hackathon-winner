@@ -139,3 +139,6 @@ contract KayabaHackathonNFTTest is Test {
     function testExcessPaymentRefunded() public {
         vm.prank(participant1);
         uint256 balanceBefore = participant1.balance;
+        
+        nft.mintAchievement{value: 0.001 ether}(
+            participant1,
