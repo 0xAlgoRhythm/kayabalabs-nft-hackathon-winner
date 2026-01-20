@@ -10,5 +10,12 @@
     fi
     
 echo ""
+echo -e "${YELLOW}Recent commits:${NC}"
+git log --oneline -10
+echo ""
+echo -e "${YELLOW}To view all commits for this file:${NC}"
+echo "git log --oneline -- $FILE_PATH"
+echo ""
+echo ""
 echo -e "${YELLOW}To see changes in a specific commit:${NC}"
 echo "git show <commit-hash>"
