@@ -375,6 +375,9 @@ contract KayabaHackathonNFTTest is Test {
     
     function testWithdrawFees() public {
         // Mint some achievements to collect fees
+        vm.prank(participant1);
+        nft.mintAchievement{value: MINT_FEE}(
+            participant1,
             "ETHGlobal Paris 2024",
             "Project 1",
             KayabaHackathonNFT.AchievementLevel.WINNER,
