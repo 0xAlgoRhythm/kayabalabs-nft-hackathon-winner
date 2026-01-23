@@ -1,0 +1,36 @@
+{
+  "name": "Kayaba Labs - Solidity Fundamentals Certificate",
+  "description": "This certificate verifies that the holder has successfully completed the Solidity Fundamentals course at Kayaba Labs. Student ID: KL-SOL-1518. This is a soulbound NFT and cannot be transferred.",
+  "image": "ipfs://bafkreiawpz2cyeckfyjck5ugdkpekcoot2t2ooprmptzqwc4kixc7h3pli",
+  "external_url": "https://kayabalabs.com",
+  "attributes": [
+    {
+      "trait_type": "Student ID",
+      "value": "KL-SOL-1518"
+    },
+    {
+      "trait_type": "Achievement Type",
+      "value": "Course Completion"
+    },
+    {
+      "trait_type": "Course Name",
+      "value": "Solidity Fundamentals"
+    },
+    {
+      "trait_type": "Institution",
+      "value": "Kayaba Labs"
+    },
+    {
+      "trait_type": "Course Level",
+      "value": "Beginner"
+    },
+    {
+      "trait_type": "Certificate Type",
+      "value": "Soulbound NFT"
+    },
+    {
+      "trait_type": "Token ID",
+      "value": "1517"
+    }
+  ]
+}
